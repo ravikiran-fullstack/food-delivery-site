@@ -12,7 +12,8 @@
 #navbar {
   display: flex;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 
 #logo {
@@ -31,6 +32,7 @@
 
 #navbar ul {
   display: flex;
+  font-family: "Baloo Bhai 2", cursive;
 }
 
 #navbar::before {
@@ -60,4 +62,82 @@
 #navbar ul li a:hover {
   color: black;
   background-color: white;
+}
+
+/* Home section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 628px;
+}
+
+#home::before {
+  content: "";
+  background: url("../bg1.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+}
+
+/* Services */
+
+#services {
+  margin-top: 34px;
+  display: flex;
+}
+
+#services .box {
+  border: 2px solid red;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 23px;
+  background-color: #fefefe;
+}
+
+#services .box img {
+  display: block;
+  margin: auto;
+  height: 150px;
+}
+
+/* utility classes */
+.h-primary {
+  font-size: 3.5rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-size: 2.8rem;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
 }
